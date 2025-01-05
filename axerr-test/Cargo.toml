@@ -1,0 +1,8 @@
+[package]
+name = "axerr-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axerr-derive = { path = "../axerr-derive" }
+axum = { version = "0.8", default-features = false }

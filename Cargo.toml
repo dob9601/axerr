@@ -1,0 +1,3 @@
+[workspace]
+members = [ "axerr","axerr-derive", "axerr-test"]
+resolver = "2"
