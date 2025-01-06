@@ -25,6 +25,7 @@ fn default_message() -> String {
 
 #[proc_macro_derive(AxErr)]
 pub fn axerr_derive(input: TokenStream) -> TokenStream {
+    let foo = Axerr::from_derive_input(&syn::parse2(input.into()).unwrap()).unwrap();
     let input = parse_macro_input!(input as DeriveInput);
 
     let name = input.ident;
